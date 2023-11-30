@@ -1,0 +1,24 @@
+CREATE DATABASE games;
+ 
+USE games;
+ 
+CREATE TABLE categorias(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL
+);
+ 
+CREATE TABLE jogos(
+id INT PRIMARY KEY AUTO_INCREMENT,
+titulo VARCHAR (255) NOT NULL,
+competitivo BIT NOT NULL
+);
+ 
+ 
+CREATE TABLE plataformas(
+id INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR (255) NOT NULL
+);
+ 
+SHOW COLUMNS FROM plataformas
+
+ 
